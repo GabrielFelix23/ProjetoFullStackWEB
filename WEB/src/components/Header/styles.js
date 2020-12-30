@@ -65,6 +65,6 @@ export const RightSide = styled.div`
     .dividir::after{
         content: "|";
         margin: 0 10px;
-        color: #fff
+        color: #fff;
     }
 ` 
