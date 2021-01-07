@@ -21,12 +21,13 @@ export const Content = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 ` 
 
 export const Title = styled.div`
     width: 100%;
     border-bottom: 1px solid #20295f;
-    text-align: center;
+    
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
