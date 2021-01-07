@@ -29,6 +29,10 @@ export const TopCard = styled.div`
     img{
         width: 70px
     }
+
+    h3{
+        font-size: 18px
+    }
 `
 
 export const BottomCard = styled.div`
