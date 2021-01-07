@@ -25,6 +25,10 @@ export const TopCard = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    img{
+        width: 70px
+    }
 `
 
 export const BottomCard = styled.div`
