@@ -37,7 +37,7 @@ function Task({match}) {
       setType(response.data.type)
       setTitle(response.data.title)
       setDescription(response.data.description)
-      setDate(format(new Date(response.data.when), 'yyyy/mm/dd'))
+      setDate(format(new Date(response.data.when), 'yyyy-mm-dd'))
       setHour(format(new Date(response.data.when), 'HH:mm'))
       
     })
