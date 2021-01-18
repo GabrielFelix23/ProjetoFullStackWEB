@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div `
-    width: 100%
+    width: 100%;
 ` 
 
 export const FilterArea = styled.div`
@@ -22,6 +22,7 @@ export const Content = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin-bottom: 70px;
 
     a{
         text-decoration: none;
