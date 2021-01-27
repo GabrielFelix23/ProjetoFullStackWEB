@@ -5,6 +5,7 @@ import * as S from './styles'
 import {format} from 'date-fns'
 
 import api from '../../services/api'
+import isConnected from '../../utils/isConnected'
 
 //Nossos components
 import Header from '../../components/Header'
@@ -80,7 +81,7 @@ function Task({match}) {
   }
 
   async function Remove(){
-    const res = window.confirm('Deseja reamente remover a tarefa?')
+    const res = window.confirm('Deseja realmente remover a tarefa?')
     if(res == true){
       await api.delete(`/task/${match.params.id}`)
       .then(() => {
@@ -90,6 +91,10 @@ function Task({match}) {
   }
 
   useEffect(() => {
+    if(!isConnected){
+      setRedirect(true)
+    }
+
     LoadTaskDetails()
   }, [])
 
