@@ -44,7 +44,7 @@ function Header({clickNotification}) {
                     :
                     <button type="button" onClick={Logout}>SAIR</button>
                 }
-                {lateCount &&
+                {lateCount ?
                     <>
                         <span className="dividir"/>
                         <button onClick={clickNotification} id="notification">
@@ -52,6 +52,8 @@ function Header({clickNotification}) {
                             <span>{lateCount}</span>
                         </button>
                     </>
+                    :
+                    <span></span>
                 }
             </S.RightSide>
         </S.Container>
